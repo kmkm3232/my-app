@@ -5,25 +5,13 @@ import { useNavigate  } from 'react-router-dom';
 export const Frontpage = () => {
     let navigate = useNavigate();
     const handleonClick = () => {
-        console.log('a18trg12')
         navigate('/table')
     }
 
     return (
-        <header className="App-header">
-        <img onClick={handleonClick} src={logo} className="App-logo" alt="logo"  />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          onClick={handleonClick}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="App-header flex-1 p-4">
+          <img onClick={handleonClick} src={logo} className="App-logo" alt="logo"  />
+        </div>
     );
   };
   
