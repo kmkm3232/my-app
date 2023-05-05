@@ -1,4 +1,4 @@
-import { ACTION_ONE } from "./type"
+import { ACTION_ONE, ACTION_TWO } from "./type"
 
 export const actionOne = () => {
     return {
@@ -6,4 +6,10 @@ export const actionOne = () => {
       payload: 1
     }
   }
- 
+
+export const actionTwo = (prop: number) => {
+  return {
+    type: ACTION_TWO,
+    payload: prop
+  }
+}
