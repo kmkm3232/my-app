@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="flex flex-wrap justify-between p-4 bg-teal-500">
-        <div className="p-4">Header content goes header</div>
+        <div className="p-4">my-app</div>
         <div className="p-4 block lg:hidden">
           <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white" onClick={()=>{
             handleClick()

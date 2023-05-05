@@ -4,3 +4,7 @@
 @import 'tailwindcss/utilities';
 
 /* Add custom styles here */
+.bg-custom-gray {
+    --tw-bg-opacity: 1;
+    background-color: #282c34;
+  }
