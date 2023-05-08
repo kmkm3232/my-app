@@ -1,12 +1,16 @@
 import { ACTION_ONE, ACTION_TWO } from "./type";
 import { BaseStore } from "./interface";
+import dayjs from "dayjs";
 
 const initialState: BaseStore = {
-    Voltage: 0,
+    nodedetail:[{
+        Voltage:0,
+        updatedAt: dayjs()
+        }],
     testItem: 0,
   }
 
-export const reducer = (state = initialState, action: { type: any; payload: number; }) => {
+export const reducer = (state = initialState, action: { type: any; payload: any; }) => {
     switch(action.type) {
         case ACTION_ONE:
             return {
@@ -17,7 +21,7 @@ export const reducer = (state = initialState, action: { type: any; payload: numb
         case ACTION_TWO:
             return{
                 ...state,
-                Voltage: action.payload
+                nodedetail: action.payload
             }
             
         default: 
